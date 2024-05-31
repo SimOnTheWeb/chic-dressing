@@ -1,0 +1,122 @@
+/*
+Theme Name:		 chicdressing
+Theme URI:		 http://childtheme-generator.com/
+Description:	 chicdressing is a child theme of Ashe, created by ChildTheme-Generator.com
+Author:			 Chic Dressing
+Author URI:		 http://childtheme-generator.com/
+Template:		 ashe
+Version:		 1.0.0
+Text Domain:	 chicdressing
+*/
+
+/*Chargement des polices Google Fonts grâce à @font-face */
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+  font-family: "Kalam";
+  src: url("fonts/Kalam-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Rokkitt";
+  src: url("fonts/Rokkitt-VariableFont_wght.ttf");
+}
+
+/*
+    Add your custom styles here
+*/
+
+body .page-content,
+.page-content select,
+.page-content input,
+.page-content textarea,
+.page-content .post-author a,
+.page-content .ashe-widget a,
+.page-content .comment-author {
+  color: #000000;
+  font-size: 14px;
+}
+
+body .header-logo a {
+  color: white;
+  text-shadow: 2px 3px 5px #d0527a;
+  transform: rotate(-9deg);
+}
+.text-center {
+  text-align: center;
+}
+
+.chic-bouton {
+  color: #ffffff;
+  background-color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 12px;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 14px;
+}
+
+#featured-slider {
+  margin-bottom: 30px;
+}
+#chic-products {
+  padding: 0 40px;
+}
+.chic-title {
+  font-family: "Kalam";
+  font-size: 52px;
+  text-decoration: inherit;
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+  margin: 30px 40px;
+  text-align: center;
+  color: #9d4c64 !important;
+  line-height: 48px;
+}
+#chic-products ul.products li.product {
+  background: #ffffff;
+  padding-bottom: 20px;
+}
+
+/* Amélioration des contrastes */
+
+nav li > a:hover,
+nav li.current-menu-item > a,
+.add_to_cart_button,
+.post-categories a,
+.read-more a {
+  color: #92692b !important;
+}
+
+.elementor-768 .elementor-element.elementor-element-6ba5b21d {
+  --divider-color: #92692b !important;
+}
+
+.page-content .post-date,
+.rpwwt-post-categories {
+  color: #000000 !important;
+}
+
+/* Retirer les catégories au dessus des articles dans les pages articles */
+
+.category-description {
+  display: none;
+}
+
+/* Retirer credit du thème */
+
+.credit {
+  display: none;
+}
